@@ -241,6 +241,10 @@ PRODUCT_PACKAGES += \
     libshim_ril \
     libxml2
 
+#DU Updater
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.du.updater=pme
+
 # Wifi
 PRODUCT_PACKAGES += \
     libwpa_client \
