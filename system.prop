@@ -45,7 +45,7 @@ ro.sf.lcd_density=640
 sdm.perf_hint_window=50
 
 # Factory Reset Protection
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
+# ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Fast charge
 persist.hvdcp.allow_opti=1
