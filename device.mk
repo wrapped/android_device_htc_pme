@@ -140,7 +140,6 @@ PRODUCT_COPY_FILES += \
 
 # HTC Logging functions
 PRODUCT_PACKAGES += \
-    libhlg \
     liblog_htc
 
 # Init
