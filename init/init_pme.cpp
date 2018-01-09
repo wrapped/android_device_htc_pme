@@ -96,7 +96,7 @@ static void load_properties(const char *original_data)
 
         while (isspace(*value)) value++;
 
-        property_set(key, value);
+        property_override(key, value);
     }
 
     free(data);
@@ -136,7 +136,7 @@ void vendor_load_properties()
     } else if (is_variant_verizon(bootcid)) {
         load_properties(htc_verizon_properties);
     } else {
-        property_set("ro.lineage.invalid_bootcid", bootcid.c_str());
+        property_override("ro.lineage.invalid_bootcid", bootcid.c_str());
         if (bootmid == "2PS620000") {
             load_properties(htc_europe_properties);
         } else {
