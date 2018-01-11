@@ -264,7 +264,7 @@
     <bool translatable="false" name="config_wifi_dual_band_support">true</bool>
 
     <!-- Boolean indicating whether Hotspot 2.0/Passpoint and ANQP queries is enabled -->
-    <bool translatable="false" name="config_wifi_hotspot2_enabled">true</bool>
+    <!-- bool translatable="false" name="config_wifi_hotspot2_enabled">true</bool -->
 
     <!-- Boolean indicating whether 802.11r Fast BSS Transition is enabled on this platform -->
  <!--   <bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool> -->
@@ -485,5 +485,18 @@
 
 <!--    <add-resource type="bool" name="config_enableKeyHandler"></add-resource>
     <bool name="config_enableKeyHandler">true</bool> -->
+    <!-- Hardware keys present on the device, stored as a bit field.
+         This integer should equal the sum of the corresponding value for each
+         of the following keys present:
+             1 - Home
+             2 - Back
+             4 - Menu
+             8 - Assistant (search)
+            16 - App switch
+            32 - Camera
+            64 - Volume rocker
+         For example, a device with Home, Back and Menu keys would set this
+         config to 7. -->
+     <integer name="config_deviceHardwareKeys">83</integer>
 
 </resources>
