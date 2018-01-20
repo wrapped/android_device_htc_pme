@@ -1,3 +1,0 @@
-#============= shell ==============
-#allow shell dalvikcache_data_file:dir write;
-#allow shell self:capability dac_override;

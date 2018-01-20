@@ -1,2 +1,7 @@
 # Read and control gpu frequencies
 allow thermal-engine sysfs_kgsl:file rw_file_perms;
+
+allow thermal-engine sysfs_uio:dir { open read search };
+allow thermal-engine sysfs_uio:lnk_file read;
+allow thermal-engine sysfs_uio_file:dir search;
+allow thermal-engine sysfs_uio_file:file { getattr open read };

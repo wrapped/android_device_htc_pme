@@ -1,0 +1,2 @@
+allow hal_power_default device:file { getattr open read };
+allow hal_power_default debugfs:file getattr;

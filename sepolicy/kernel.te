@@ -1,5 +1,2 @@
-# HTC's battery code directly writes to misc to store (debugging?) state
-
-#============= kernel ==============
 allow kernel vfat:dir search;
 allow kernel exfat:dir search;

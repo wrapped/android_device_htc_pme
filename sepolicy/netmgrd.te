@@ -1,2 +1,5 @@
 allow netmgrd carrier_file:dir { search };
 allow netmgrd carrier_file:file r_file_perms;
+allow netmgrd netd_socket:sock_file write;
+allow netmgrd toolbox_exec:file { execute execute_no_trans getattr open read };
+allow netmgrd net_data_file:dir read;

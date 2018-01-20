@@ -1,0 +1,7 @@
+allow toolbox init:fifo_file { getattr ioctl write };
+allow toolbox radio_data_file:dir { add_name create setattr getattr open read remove_name rmdir write };
+allow toolbox radio_data_file:file { getattr setattr };
+allow toolbox rootfs:dir { add_name write };
+allow toolbox self:capability { chown dac_override fowner fsetid };
+allow toolbox vfat:file getattr;
+allow toolbox rootfs:lnk_file create;
