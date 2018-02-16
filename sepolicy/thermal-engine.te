@@ -1,2 +1,4 @@
 # Read and control gpu frequencies
 allow thermal-engine sysfs_kgsl:file rw_file_perms;
+allow thermal-engine hal_perf_hwservice:hwservice_manager find;
+allow thermal-engine hwservicemanager:binder call;

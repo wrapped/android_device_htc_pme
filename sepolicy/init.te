@@ -4,3 +4,13 @@ allow init misc_block_device:blk_file rw_file_perms;
 # Power
 allow init proc_kernel_sched:file rw_file_perms;
 
+allow init hal_dumpstate_hwservice:hwservice_manager add;
+allow init hal_usb_hwservice:hwservice_manager add;
+allow init hidl_base_hwservice:hwservice_manager add;
+allow init hwservicemanager:binder { call transfer };
+allow init socket_device:sock_file { create setattr };
+allow init system_data_file:file append;
+allow init system_file:file execute_no_trans;
+allow init vendor_file:file execute_no_trans;
+allow init vfat:dir { open read search };
+allow init vfat:file { open read };
