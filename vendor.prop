@@ -92,10 +92,6 @@ ro.cutoff_voltage_mv=3050
 # Google Assistant
 ro.opa.eligible_device=true
 
-# IMS
-service.qti.ims.enabled=1
-persist.data.iwlan.enable=true
-
 # Media | system props for the MM modules
 media.stagefright.enable-player=true
 media.stagefright.enable-http=true
@@ -204,12 +200,15 @@ wifi.interface=wlan0
 ro.min.fling_velocity=160
 ro.max.fling_velocity=20000
 
-#VoLTE
-persist.volte_enabled_by_hw=1
+# IMS & VoLTE
+persist.data.iwlan.enable=true
 persist.dbg.ims_volte_enable=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
+service.qti.ims.enabled=1
+persist.radio.videopause.mode=1
+persist.volte_enabled_by_hw=1
 
 persist.zygote.preload_threads=3
 persist.preload.common=0
