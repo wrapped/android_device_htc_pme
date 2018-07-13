@@ -200,6 +200,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Release
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 
+# RIL
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+
 # SELinux
 #-include device/qcom/sepolicy/sepolicy.mk
 # BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
