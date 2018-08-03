@@ -465,10 +465,6 @@ PRODUCT_PACKAGES += \
     android.hardware.vr@1.0-service \
     vr.msm8996
 
-# VNDK-SP:
-PRODUCT_PACKAGES += \
-    vndk-sp
-
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
