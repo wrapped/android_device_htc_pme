@@ -112,8 +112,11 @@ vidc.enc.dcvs.extra-buff-count=2
 ro.nfc.port=I2C
 
 # Perf
+ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.qti.sys.fw.bg_apps_limit=60
 sdm.perf_hint_window=50
+ro.core_ctl_min_cpu=2
+ro.core_ctl_max_cpu=4
 
 # Property for game detection feature
 debug.enable.gamed=0
@@ -178,6 +181,13 @@ persist.net.doxlat=false
 
 # Time-services
 persist.delta_time.enable=true
+
+#VoLTE
+persist.volte_enabled_by_hw=1
+persist.dbg.ims_volte_enable=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
 
 # Wifi
 wifi.interface=wlan0
